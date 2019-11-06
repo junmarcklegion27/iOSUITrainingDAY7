@@ -39,7 +39,7 @@
     MovieCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"showingCell" forIndexPath:indexPath];
     NSDictionary *dict = [self.movieArray objectAtIndex:indexPath.item];
     cell.iconImageView.image = [UIImage imageNamed:dict[@"photo"]];
-    cell.iconImageView.contentMode = UIViewContentModeScaleAspectFill;
+    cell.iconImageView.contentMode = UIViewContentModeScaleToFill;
     cell.iconLabel.text = dict[@"name"];
     return cell;
 }
@@ -47,7 +47,6 @@
 - (NSInteger)collectionView:(nonnull UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.movieArray.count;
 }
-
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     CGRect screenBound  = [[UIScreen mainScreen] bounds];
