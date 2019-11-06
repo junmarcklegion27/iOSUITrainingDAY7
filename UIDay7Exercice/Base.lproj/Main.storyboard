@@ -77,6 +77,9 @@
                                                     </label>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybq-Gv-pVd">
                                                         <rect key="frame" x="0.0" y="260" width="375" height="315"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="315" id="oOP-gK-rnL"/>
+                                                        </constraints>
                                                         <connections>
                                                             <segue destination="CTC-4T-dCe" kind="embed" id="mIj-Kb-L4G"/>
                                                         </connections>
