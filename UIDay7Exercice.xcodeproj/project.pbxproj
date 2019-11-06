@@ -15,6 +15,9 @@
 		A73AE97123722AE7005E1151 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A73AE97023722AE7005E1151 /* main.m */; };
 		A73AE97B23722AE7005E1151 /* UIDay7ExerciceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A73AE97A23722AE7005E1151 /* UIDay7ExerciceTests.m */; };
 		A73AE98623722AE7005E1151 /* UIDay7ExerciceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A73AE98523722AE7005E1151 /* UIDay7ExerciceUITests.m */; };
+		A73AE99623722CAB005E1151 /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A73AE99423722CAB005E1151 /* MovieCollectionViewCell.m */; };
+		A73AE99723722CAB005E1151 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A73AE99523722CAB005E1151 /* MovieCollectionViewCell.xib */; };
+		A73AE99B23722FEB005E1151 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A73AE99A23722FEB005E1151 /* CollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		A73AE98123722AE7005E1151 /* UIDay7ExerciceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIDay7ExerciceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73AE98523722AE7005E1151 /* UIDay7ExerciceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDay7ExerciceUITests.m; sourceTree = "<group>"; };
 		A73AE98723722AE7005E1151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A73AE99323722CAB005E1151 /* MovieCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewCell.h; sourceTree = "<group>"; };
+		A73AE99423722CAB005E1151 /* MovieCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewCell.m; sourceTree = "<group>"; };
+		A73AE99523722CAB005E1151 /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
+		A73AE99923722FEB005E1151 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		A73AE99A23722FEB005E1151 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +109,14 @@
 		A73AE96023722AE6005E1151 /* UIDay7Exercice */ = {
 			isa = PBXGroup;
 			children = (
+				A73AE99823722CB5005E1151 /* Cell */,
 				A73AE96123722AE6005E1151 /* AppDelegate.h */,
 				A73AE96223722AE6005E1151 /* AppDelegate.m */,
 				A73AE96423722AE6005E1151 /* ViewController.h */,
 				A73AE96523722AE6005E1151 /* ViewController.m */,
 				A73AE96723722AE6005E1151 /* Main.storyboard */,
+				A73AE99923722FEB005E1151 /* CollectionViewController.h */,
+				A73AE99A23722FEB005E1151 /* CollectionViewController.m */,
 				A73AE96A23722AE7005E1151 /* Assets.xcassets */,
 				A73AE96C23722AE7005E1151 /* LaunchScreen.storyboard */,
 				A73AE96F23722AE7005E1151 /* Info.plist */,
@@ -130,6 +141,16 @@
 				A73AE98723722AE7005E1151 /* Info.plist */,
 			);
 			path = UIDay7ExerciceUITests;
+			sourceTree = "<group>";
+		};
+		A73AE99823722CB5005E1151 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A73AE99323722CAB005E1151 /* MovieCollectionViewCell.h */,
+				A73AE99423722CAB005E1151 /* MovieCollectionViewCell.m */,
+				A73AE99523722CAB005E1151 /* MovieCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +259,7 @@
 				A73AE96E23722AE7005E1151 /* LaunchScreen.storyboard in Resources */,
 				A73AE96B23722AE7005E1151 /* Assets.xcassets in Resources */,
 				A73AE96923722AE6005E1151 /* Main.storyboard in Resources */,
+				A73AE99723722CAB005E1151 /* MovieCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +287,8 @@
 				A73AE96623722AE6005E1151 /* ViewController.m in Sources */,
 				A73AE97123722AE7005E1151 /* main.m in Sources */,
 				A73AE96323722AE6005E1151 /* AppDelegate.m in Sources */,
+				A73AE99B23722FEB005E1151 /* CollectionViewController.m in Sources */,
+				A73AE99623722CAB005E1151 /* MovieCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
